@@ -79,41 +79,45 @@ img {
 
 /* header */
 .header {
-  height: 112px;
+  /* height: 112px; */
   background-color: #fff;
 }
 
 .header {
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10; */
 }
 
 .header-container {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 0;
+  height: 100vh;
+  background-image: url(../img/pixta_27560106_S-600x426.jpg);
+  background-position: center;
+  background-size: cover; */
 }
 
 /* nav-button */
 .navbtn {
-  padding: 0;
+  /* padding: 0;
   outline: none;
   border: none;
   background: transparent;
   cursor: pointer;
   color: #aaa;
-  font-size: 30px;
+  font-size: 30px; */
 }
 /* ------------ */
 
 /* hero */
 .item01 {
-  height: 100vh;
+  /* height: 100vh;
   background-image: url(../img/pixta_27560106_S-600x426.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .hero-container {
@@ -146,7 +150,7 @@ img {
 
 /* news */
 .news {
-  padding-top: 150px;
+  /* padding-top: 150px; */
   background-color: #fff;
 }
 
@@ -229,7 +233,7 @@ img {
 
 /* profile */
 .profile {
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 
 .profile figure {
@@ -259,7 +263,7 @@ img {
 
 /* information */
 .information {
-  padding-top: 300px;
+  /* padding-top: 300px; */
 }
 
 .information img {
@@ -313,7 +317,7 @@ img {
 
 /* access */
 .access {
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 
 .add:not(:last-child) {
