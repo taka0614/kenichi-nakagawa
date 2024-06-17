@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>中川賢一オフィシャルサイト</title>
+    <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
 
     <link
@@ -26,248 +28,380 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/6-1-8.css" />
+    <link rel="stylesheet" href="css/original-anime.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    /> -->
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="header-container w-container">
-        <!-- <div class="site">
+        <div class="site">
           <a href="index.html">
             <img src="img/id_kn.svg" alt="" width="200" height="26" />
           </a>
         </div>
-        <button class="navbtn">
+
+        <button
+          class="navbtn drawer__button"
+          onClick="document.querySelector('html').classList.toggle('open')"
+        >
           <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
           <span class="sr-only">MENU</span>
-        </button> -->
+        </button>
+
+        <nav class="nav drawer__nav">
+          <div>
+            <ul class="nav-inner drawer__nav__menu">
+              <li class="drawer__nav__item">
+                <a class="drawer__nav__link" href="#">ホーム</a>
+              </li>
+              <li class="drawer__nav__item">
+                <a class="drawer__nav__link" href="#content01">お知らせ</a>
+              </li>
+              <li class="drawer__nav__item">
+                <a class="drawer__nav__link" href="#content02">プロフィール</a>
+              </li>
+              <li class="drawer__nav__item">
+                <a class="drawer__nav__link" href="#content03">大好き札幌</a>
+              </li>
+              <li class="drawer__nav__item">
+                <a class="drawer__nav__link" href="#content04">事業所案内</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <div class="area js-area">
-      <div class="wrap js-wrap">
-        <div class="item item01 js-item">
-          <span>
-            <section class="hero">
-              <div class="hero-container w-container">
-                <h1 class="catch1">I LOVE SAPPORO</h1>
-                <p class="catch2">
-                  「大好き」だからこそ、やりたいことがあるのです。
-                </p>
-              </div>
-            </section>
-          </span>
-        </div>
+    <section class="hero">
+      <div class="hero-container w-container">
+        <ul class="slider">
+          <li>
+            <figure><img src="img/hero-img.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img01.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img02.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img03.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img04.png" alt="" /></figure>
+          </li>
+          <!--/slider-->
+        </ul>
 
-        <div class="item item02 js-item">
-          <span>
-            <section class="news">
-              <div class="news-container w-container">
-                <div class="news-heading">
-                  <h2 class="heading-decoration">NEWS</h2>
-                  <p>
-                    I LOVE SAPPORO<br />大好き札幌「大好き」だからこそやりたいことがあるのです。
-                  </p>
-                  <p class="deco">お知らせと活動記録です。</p>
-                </div>
-                <div class="news-inner">
-                  <div class="detail-wrapper">
-                    <article class="detail">
-                      <figure>
-                        <img
-                          src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
-                          alt=""
-                        />
-                      </figure>
-                      <h3>「地方自治」を本物にしたい</h3>
-                      <p>
-                        有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
-                      </p>
-                      <a class="btn" href="">続きを見る</a>
-                    </article>
-                    <article class="detail pc-only">
-                      <figure>
-                        <img
-                          src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
-                          alt=""
-                        />
-                      </figure>
-                      <h3>「地方自治」を本物にしたい</h3>
-                      <p>
-                        有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
-                      </p>
-                      <a class="btn" href="">続きを見る</a>
-                    </article>
-                    <article class="detail pc-only">
-                      <figure>
-                        <img
-                          src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
-                          alt=""
-                        />
-                      </figure>
-                      <h3>「地方自治」を本物にしたい</h3>
-                      <p>
-                        有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
-                      </p>
-                      <a class="btn" href="">続きを見る</a>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </span>
-        </div>
+        <h1 class="tlt" data-in-effect="fadeInDown" data-in-shuffle="true">I LOVE SAPPORO</h1>
+        <p class="catch2">
+          「大好き」だからこそ<br />やりたいことがあるのです。
+        </p>
 
-        <div class="item item03 js-item">
-          <span>
-            <section class="profile">
-              <div class="profile-container w-container">
-                <figure>
-                  <img src="img/profile_01.png" alt="" />
-                </figure>
-                <h2 class="heading-decoration">PROFILE</h2>
-                <p class="name">中川賢一</p>
-                <p>生年月日:<br />1967（昭和42）年1月9日</p>
-                <p>経歴:</p>
-                <p>
-                  札幌市立緑丘小学校、札幌市立伏見中学校、札幌南高校、東北大学経済学部卒業、シンガポール国立大学マーケティング学位取得。北海道拓殖銀行を経て、北海道庁入庁。道シンガポール事務所駐在員など、主に経済政策に従事。退職後、札幌国際大学非常勤講師などを務める。平成27年、札幌市議会議員に当選。現在2期目。
-                </p>
-              </div>
-            </section>
-          </span>
-        </div>
-
-        <div class="item item04 js-item">
-          <span>
-            <section class="information">
-              <div class="information-container w-container">
-                <figure>
-                  <img src="img/slogan_01-8.png" alt="" />
-                </figure>
-                <div class="slogan">
-                  <figure>
-                    <img src="img/daisuki_01.png" alt="" />
-                  </figure>
-                  <p class="slogan01">
-                    高齢者や世界中の多様な人々が満たされ住みよい街づくりを目指す
-                  </p>
-                </div>
-
-                <div class="slogan">
-                  <figure>
-                    <img src="img/daisuki_01.png" alt="" />
-                  </figure>
-                  <p class="slogan02">
-                    子育てというかけがえのない営みをもっと喜べる環境を目指す
-                  </p>
-                </div>
-
-                <div class="slogan">
-                  <figure>
-                    <img src="img/daisuki_01.png" alt="" />
-                  </figure>
-                  <p class="slogan03">
-                    子どもたちが自分たちの街に誇りを持ち世界にも目を向けられる教育を目指す
-                  </p>
-                </div>
-
-                <p class="deco">大好き札幌通信</p>
-                <div class="information-inner">
-                  <div class="com-wrapper">
-                    <aside class="com">
-                      <figure>
-                        <img src="img/com-img-1.jpg" alt="" />
-                        <p class="com-title">2022年春号（表）</p>
-                      </figure>
-                      <figure>
-                        <img src="img/com-img-2.jpg" alt="" />
-                        <p class="com-title">2022年春号（裏）</p>
-                      </figure>
-                      <figure>
-                        <img src="img/com-img-3.png" alt="" />
-                        <p class="com-title">2020年新春号</p>
-                      </figure>
-                      <figure>
-                        <img src="img/com-img-4.gif" alt="" />
-                        <p class="com-title">2019年新春号</p>
-                      </figure>
-                    </aside>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </span>
-        </div>
-        <div class="item item05 js-item">
-          <span>
-            <section class="access">
-              <div class="access-container w-container">
-                <h2 class="heading-decoration">ACCESS</h2>
-                <div class="add">
-                  <figure>
-                    <img src="img/kuro1.jpg" alt="" />
-                  </figure>
-                  <h3>札幌議会 自由民主党控室</h3>
-                  <p>〒060-8611</p>
-                  <p>北海道札幌市中央区北一条西2丁目</p>
-                  <p>TEL:(011-211-3207)　FAX:(011-218-5119)</p>
-                  <figure>
-                    <img src="img/kuro1.jpg" alt="" />
-                  </figure>
-                  <h3>中川賢一事務所</h3>
-                  <p>
-                    〒060-8611<br />
-                    北海道札幌市中央区南二十条西6丁目4-10 フランツ幌南1F
-                  </p>
-                  <p>TEL:(011-520-0001)　FAX:(011-520-8888)</p>
-                  <p>MILE:info@daisuki-sapporo.com</p>
-                </div>
-              </div>
-              <aside class="sns"></aside>
-            </section>
-          </span>
-        </div>
+        <ul class="slider-bottom" dir="rtl">
+          <li>
+            <figure><img src="img/hero-img.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img05.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img06.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img07.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/hero-heading-img08.png" alt="" /></figure>
+          </li>
+          <!--/slider-->
+        </ul>
       </div>
+
+      <div id="mv">
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+      </div>
+
+      <div id="mv2">
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+        <div class="mv_border"></div>
+      </div>
+    </section>
+
+    <div id="content01">
+      <section class="news">
+        <div class="imgBox inview fadeIn_left"></div>
+        <div class="news-container w-container">
+          <div class="news-heading">
+            <h2 class="heading-decoration">NEWS</h2>
+            <p>
+              I LOVE SAPPORO<br />大好き札幌「大好き」だからこそ<br />やりたいことがあるのです。
+            </p>
+            <p class="deco">お知らせと活動記録です。</p>
+          </div>
+
+          <div class="news-body">
+            <article class="detail">
+              <figure>
+                <img
+                  src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
+                  alt=""
+                />
+              </figure>
+              <h3>「地方自治」を本物にしたい</h3>
+              <p>
+                有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
+              </p>
+              <a class="btn" href="">続きを見る</a>
+            </article>
+            <article class="detail pc-only">
+              <figure>
+                <img
+                  src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
+                  alt=""
+                />
+              </figure>
+              <h3>「地方自治」を本物にしたい</h3>
+              <p>
+                有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
+              </p>
+              <a class="btn" href="">続きを見る</a>
+            </article>
+            <article class="detail pc-only">
+              <figure>
+                <img
+                  src="img/441947799_10161150562413903_8463321220412961934_n-154x300.jpg"
+                  alt=""
+                />
+              </figure>
+              <h3>「地方自治」を本物にしたい</h3>
+              <p>
+                有事に際して国の地方への「指示権」拡充が地方自治法の改正案として国会審議されている。先の感染症対応で政府と自治体の関係性の曖昧さが混乱を招いたことを踏まえ、想定外の事態に向けて対応の整理に踏み切ったことは評価したい。
+              </p>
+              <a class="btn" href="">続きを見る</a>
+            </article>
+          </div>
+        </div>
+        <div class="imgBox inview_re fadeIn_right"></div>
+        <div class="imgBox inview fadeIn_left"></div>
+      </section>
     </div>
 
-    <!-- スクロール画像を埋め込む -->
+    <div id="content02">
+      <section class="profile">
+        <div class="profile-container w-container">
+          <div class="profile-heading">
+            <h2 class="heading-decoration">PROFILE</h2>
+            <figure>
+              <img
+                src="img/profile-img.jpg"
+                alt=""
+                width="1500"
+                height="2000"
+              />
+            </figure>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+          <div class="profile-body">
+            <h3 class="name">中 川 賢 一</h3>
+            <p class="dob">生年月日／1967（昭和42）年1月9日</p>
+            <p class="career">
+              経歴／札幌市立緑丘小学校、札幌市立伏見中学校、札幌南高校、東北大学経済学部卒業、シンガポール国立大学マーケティング学位取得。北海道拓殖銀行を経て、北海道庁入庁。道シンガポール事務所駐在員など、主に経済政策に従事。退職後、札幌国際大学非常勤講師などを務める。平成27年、札幌市議会議員に当選。現在2期目。
+            </p>
+          </div>
+        </div>
+        <div class="imgBox inview_re fadeIn_right"></div>
+        <div class="imgBox inview fadeIn_left"></div>
+      </section>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <div id="content03">
+      <section class="information">
+        <div class="information-container w-container">
+          <div class="information-heading">
+            <figure class="slogan-title">
+              <img src="img/slogan_01-8.png" alt="" />
+            </figure>
+            <div class="slogan">
+              <figure>
+                <img src="img/daisuki_01.png" alt="" />
+              </figure>
+              <p class="slogan01">
+                高齢者や世界中の多様な人々が満たされ住みよい街づくりを目指す
+              </p>
+            </div>
+            <div class="slogan">
+              <figure>
+                <img src="img/daisuki_01.png" alt="" />
+              </figure>
+              <p class="slogan02">
+                子育てというかけがえのない営みをもっと喜べる環境を目指す
+              </p>
+            </div>
+            <div class="slogan">
+              <figure>
+                <img src="img/daisuki_01.png" alt="" />
+              </figure>
+              <p class="slogan03">
+                子どもたちが自分たちの街に誇りを持ち世界にも目を向けられる教育を目指す
+              </p>
+            </div>
+          </div>
 
-    <script>
-      // use a script tag or an external JS file
-      document.addEventListener("DOMContentLoaded", (event) => {
-        gsap.registerPlugin(ScrollTrigger);
-        // gsap code here!
-      });
+          <div class="information-body">
+            <p class="deco">大好き札幌通信</p>
+            <div class="com-wrapper">
+              <aside class="com">
+                <figure>
+                  <img src="img/com-img-1.jpg" alt="" />
+                  <p class="com-title">2022年春号（表）</p>
+                </figure>
+                <figure>
+                  <img src="img/com-img-2.jpg" alt="" />
+                  <p class="com-title">2022年春号（裏）</p>
+                </figure>
+                <figure>
+                  <img src="img/com-img-3.png" alt="" />
+                  <p class="com-title">2020年新春号</p>
+                </figure>
+                <figure>
+                  <img src="img/com-img-4.gif" alt="" />
+                  <p class="com-title">2019年新春号</p>
+                </figure>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-      window.addEventListener("load", function () {
-        //プラグインを定義
-        gsap.registerPlugin(ScrollTrigger);
+    <div id="content04">
+      <section class="access">
+        <div class="imgBox inview fadeIn_left"></div>
+        <div class="access-container w-container">
+          <div class="access-heading">
+            <h2 class="heading-decoration">ACCESS</h2>
+            <div class="add">
+              <figure>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.9911735609394!2d141.3514150750725!3d43.06265319042679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2976056512a9%3A0x9f9cc0820507d930!2z44CSMDYwLTAwMDEg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65YyX77yR5p2h6KW_77yS5LiB55uu!5e0!3m2!1sja!2sjp!4v1718597918273!5m2!1sja!2sjp"
+                  width="100%"
+                  height="auto"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figure>
+              <h3>札幌議会 自由民主党控室</h3>
+              <p>〒060-8611</p>
+              <p>北海道札幌市中央区北一条西2丁目</p>
+              <p>TEL:(011-211-3207)　FAX:(011-218-5119)</p>
+              <figure>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.401647460783!2d141.34947197507063!3d43.032980092325246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a115eea199f%3A0x979119960071f70f!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yW5LiB55uu77yU4oiS77yR77yQIOODleODqeODg-ODhOW5jOWNlw!5e0!3m2!1sja!2sjp!4v1718597797064!5m2!1sja!2sjp"
+                  width="100%"
+                  height="auto"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figure>
+              <h3>中川賢一事務所</h3>
+              <p>
+                〒060-8611<br />
+                北海道札幌市中央区南二十条西6丁目4-10 フランツ幌南1F
+              </p>
+              <p>TEL:(011-520-0001)　FAX:(011-520-8888)</p>
+              <p>MILE:info@daisuki-sapporo.com</p>
+            </div>
 
-        const area = document.querySelector(".js-area");
-        const wrap = document.querySelector(".js-wrap");
-        const items = document.querySelectorAll(".js-item");
-        const num = items.length;
+            <div class="bgd triangle02"></div>
+          </div>
+          <div class="access-body sns-heading">
+            <aside class="sns">
+              <div class="sns-body">
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/twitter_banner01.png" alt="" />
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/fb_baner.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/instagram_baner01.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/blog_baner.png" alt="" />
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/sigikai01.png" alt="" />
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="">
+                    <img src="img/sapporo-zimin01.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="imgBox inview_re fadeIn_right"></div>
+      </section>
+    </div>
 
-        //横幅を指定
-        gsap.set(wrap, { width: num * 100 + "%" });
-        gsap.set(items, { width: 100 / num + "%" });
+    <footer class="footer">
+      <p>&copy;Nakagawa Kenichi</p>
+    </footer>
 
-        gsap.to(items, {
-          xPercent: -100 * (num - 1), //x方向に移動させる
-          ease: "none",
-          scrollTrigger: {
-            trigger: area, //トリガー
-            start: "top top", //開始位置
-            end: "+=1000", //終了位置
-            pin: true, //ピン留め
-            scrub: true, //スクロール量に応じて動かす
-          },
-        });
-      });
-    </script>
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/6-1-8.js"></script>
   </body>
 </html>

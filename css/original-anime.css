@@ -1,0 +1,126 @@
+#mv {
+    position: relative;
+}
+
+@keyframes mv_animation {
+    0% {
+        transform: rotate(45deg) translateY(-20vw) translate3d(0,0,0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(45deg) translateY(20vw) translate3d(0,0,0);
+        opacity: 0;
+    }
+}
+
+#mv .mv_border {
+    display: block;
+    width: 200%;
+    height: 0.7px;
+    position: absolute;
+    left: -10vw;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    animation: mv_animation 13s ease-in-out infinite alternate;
+    opacity: 0.5;
+    outline: 1px solid transparent;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+#mv .mv_border:nth-of-type(2) {
+    background: #10a5c1;
+    top: -5%;
+    animation-direction: alternate-reverse;
+    animation-duration: 6s;
+    overflow: hidden;
+}
+
+#mv .mv_border:nth-of-type(3) {
+    background: #8a98f5;
+    opacity: 0.2;
+    top: -6%;
+    animation-duration: 14s;
+    overflow: hidden;
+}
+
+#mv .mv_border:nth-of-type(4) {
+    top: 10%;
+    animation-duration: 16s;
+    overflow: hidden;
+}
+
+#mv .mv_border:nth-of-type(5) {
+    background: #10a5c1;
+    top: -4%;
+    animation-duration: 8s;
+    overflow: hidden;
+}
+
+#mv .mv_border:nth-of-type(6) {
+    background: #8a98f5;
+    opacity: 0.2;
+    top: -3%;
+    animation-direction: alternate-reverse;
+    animation-duration: 12s;
+    overflow: hidden;
+}
+
+#mv2 .mv_border {
+    display: block;
+    width: 200%;
+    height: 0.7px;
+    background: #ffb6c1;
+    position: absolute;
+    right: 0vw;
+    transform: rotate(45deg);
+    transform-origin: center;
+    animation: mv_animation 13s ease-in-out infinite alternate;
+    opacity: 0.5;
+    outline: 1px solid transparent;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#mv2 .mv_border:nth-of-type(2) {
+    background: #ffdead;
+    top: -5%;
+    animation-direction: alternate-reverse;
+    animation-duration: 6s;
+    overflow: hidden;
+}
+
+#mv2 .mv_border:nth-of-type(3) {
+    background: #fffaf0;
+    opacity: 0.2;
+    top: -6%;
+    animation-duration: 14s;
+    overflow: hidden;
+}
+
+#mv2 .mv_border:nth-of-type(4) {
+    top: 10%;
+    animation-duration: 16s;
+    overflow: hidden;
+}
+
+#mv2 .mv_border:nth-of-type(5) {
+    background: #fff0f5;
+    top: -4%;
+    animation-duration: 8s;
+    overflow: hidden;
+}
+
+#mv2 .mv_border:nth-of-type(6) {
+    background: #ffe4e1;
+    opacity: 0.2;
+    top: -3%;
+    animation-direction: alternate-reverse;
+    animation-duration: 12s;
+    overflow: hidden;
+}
+
