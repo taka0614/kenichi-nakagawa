@@ -360,3 +360,24 @@ $(function () {
 $(function () {
   $(".tlt").textillate();
 });
+
+$(function () {
+  $(".btn-s").click(function () {
+    $("p").css("font-size", "0.5rem");
+  });
+
+  $(".btn-m").click(function () {
+    $("p").css("font-size", "1rem");
+  });
+
+  $(".btn-l").click(function () {
+    $("p").css("font-size", "1.2rem");
+  });
+});
+
+const buttons = document.querySelectorAll(".font-button");
+buttons.forEach((v1) => {
+  v1.addEventListener("click", () => {
+    buttons.forEach((v2) => v2.classList[v1 == v2 ? "add" : "remove"]("on"));
+  });
+});
